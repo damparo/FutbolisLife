@@ -1,8 +1,8 @@
 import React from "react";
-import OmdbContainer from "./components/OmdbContainer";
+import WorldCupboard from "./components/WorldCupBoard/WorldCupBoard";
 
 function App() {
-  return <OmdbContainer />;
+  return <WorldCupboard />;
 }
 
 export default App;
