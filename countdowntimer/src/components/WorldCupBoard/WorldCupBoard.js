@@ -1,11 +1,12 @@
 import React from 'react';
+import BannerText from '../BannerText/BannerText';
 // import './WorldCupboard.css';
 
 
 function WorldCupboard() {
     return (
         <div>
-            <h1>hello</h1>
+            <BannerText/>
         </div>
     )
 }
