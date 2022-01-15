@@ -7,44 +7,28 @@ import CardGroup from 'react-bootstrap/CardGroup';
 function Timer() {
   return (
     <div>
-      {/* <Card>
-
-      <p className="digitcolor">time blocks will go here</p>
-      </Card> */}
       <CardGroup>
         <Card>
           <Card.Body>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+          <Card.Title>Years</Card.Title>
+            <Card.Text className="year">
+              0
             </Card.Text>
           </Card.Body>
         </Card>
         <Card>
           <Card.Body>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+          <Card.Title>Months</Card.Title>
+            <Card.Text className="months">
+              10
             </Card.Text>
           </Card.Body>
         </Card>
         <Card>
           <Card.Body>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card>
-          <Card.Body>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+          <Card.Title>Days</Card.Title>
+            <Card.Text className="days">
+              15
             </Card.Text>
           </Card.Body>
         </Card>
