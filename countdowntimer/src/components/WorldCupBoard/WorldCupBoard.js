@@ -8,8 +8,8 @@ import Timer from '../Timer/Timer';
 const futureDate = add(new Date(), {
 
     years: 0,
-    months: 9,
-    days: 35,
+    months: 10,
+    days: 3,
 
 });
 

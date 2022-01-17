@@ -35,19 +35,19 @@ function Timer({futureDate}) {
         <Card>
           <Card.Body>
             <Card.Title>Years</Card.Title>
-            <Card.Text value={years} label="years" className="years"></Card.Text>
+            <Card.Text value={years} label="years" className="years">{years}</Card.Text>
           </Card.Body>
         </Card>
         <Card>
           <Card.Body>
             <Card.Title>Months</Card.Title>
-            <Card.Text value={months} label="days" className="months"></Card.Text>
+            <Card.Text value={months} label="days" className="months">{months}</Card.Text>
           </Card.Body>
         </Card>
         <Card>
           <Card.Body>
             <Card.Title>Days</Card.Title>
-            <Card.Text value={days} label="" className="days"></Card.Text>
+            <Card.Text value={days} label="" className="days">{days}</Card.Text>
           </Card.Body>
         </Card>
       </CardGroup>
