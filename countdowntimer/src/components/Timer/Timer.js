@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Timer.css";
 import CardGroup from "react-bootstrap/CardGroup";
-// import moment from "moment";
+
 
 function Timer() {
-
+// set up  state variables for countdown timer: years, days, hours, minutes, seconds
     const [timerYears, setTimerYears] = useState();
     const [timerDays, setTimerDays] = useState();
     const [timerHours, setTimerHours] = useState();
@@ -15,15 +15,17 @@ function Timer() {
     let interval;
 
     const startCountDown = () => {
-
+      
+      // set the variable with our target world cup date
       const startDate = new Date("November 21,2022 ").getTime();
 
       interval = setInterval( () => {
 
         const now = new Date().getTime();
-
+        // this variable gives the difference in time between the future world cup date and the present, in milliseconds
         const timeBetweenDates = startDate - now;
 
+        // convert the difference to years, days, hours, minutes, and seconds
         const years = Math.floor(timeBetweenDates/(365*24*60*60*1000));
         const days = Math.floor(timeBetweenDates % (365*24*60*60*1000)/(24*60*60*1000));
         const hours = Math.floor(timeBetweenDates % (24*60*60*1000)/(60*60*1000));
@@ -55,44 +57,6 @@ function Timer() {
       startCountDown();
 
     });
-
-    // const [now, setNow] = useState(new Date());
-    // const isTimeUp = isBefore(futureDate, now);
-    // let years = 0;
-    // let months = 0;
-    // let days = 0;
-    // let hours = 0;
-    // let minutes = 0;
-    // let seconds = 0;
-
-    // if(!isTimeUp){
-    //     const duration = intervalToDuration({
-    //         start: now,
-    //         end: futureDate
-    //     });
-
-    //     years = duration.years;
-    //     months = duration.months;
-    //     days = duration.days;
-    //     hours = duration.hours;
-    //     minutes = duration.minutes;
-    //     seconds = duration.seconds;
-
-    // }
-
-    // useEffect( () => {
-
-    //   setInterval( () => {
-    //     console.log("ticking");
-    //     setNow(new Date())
-
-    //   }, 1000)
-
-    // }, [setNow]);
-
-    // const timerContents = isTimeUp ? ( <div className={ style.timeIsUp}>time is up!!!</div>) : (
-
-    // )
 
   return (
     <div>
